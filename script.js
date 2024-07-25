@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", () => {
       square.addEventListener("mouseover", () => {
         if (selectedColor) {
           square.style.backgroundColor = selectedColor;
+          square.style.opacity= "1";
         }
       });
     }
@@ -30,7 +31,7 @@ document.addEventListener("DOMContentLoaded", () => {
       alert("Please enter a valid number greater than 0.");
     }
     answer.value = "";
-  });
+  });               
 
   let selectedColor = null;
 
@@ -38,6 +39,12 @@ document.addEventListener("DOMContentLoaded", () => {
     btn.addEventListener("click", (event) => {
       selectedColor = getComputedStyle(event.target).backgroundColor;
     });
+  });
+
+  const myColor = document.querySelector("#favcolor");
+  myColor.addEventListener("input",(event) => {
+    selectedColor = event.target.value;
+    console.log(selectedColor)
   });
 
   const resetButton = document.querySelector("#reset");
