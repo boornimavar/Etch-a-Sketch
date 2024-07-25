@@ -6,7 +6,13 @@ body {
     align-items: center;
     height: 100vh;
     justify-content: center;
-    gap:20px;
+    gap:40px;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  button,input{
     font-family: "Lilita One", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -30,7 +36,6 @@ body {
     width: 480px;
     display: flex;
     flex-wrap: wrap; 
-
   }
 
   #holder img{
@@ -39,14 +44,17 @@ body {
   }
 
   .contents{
+    background-color:rgba(0, 0, 0, 0.918);
     padding: 20px;
-    height: 460px;
+    height: 480px;
     width: 480px;
     box-sizing: border-box; 
     display: flex;
+    align-items: center;
     flex-direction: column;
     margin-top: 80px;
-    
+    border-radius: 20px;
+    padding: 30px;
   }
 
   .square {
@@ -55,8 +63,8 @@ body {
   }
 
   .btn{
-    width: 55px;
-    height: 25px;
+    width: 65px;
+    height: 30px;
     cursor: pointer;
     border-radius: 40px;
   }
@@ -90,11 +98,11 @@ body {
     border:none;
   }
   #btn6{
-    background-color:rgb(251, 154, 209) ;
+    background-color:rgb(251, 154, 209);
     border:none;
   }
   
-  #reset,#eraser,#ok,input,label{
+  #reset,#eraser,#ok,#answer,label{
     background-color: white;
     border: 1px solid black;
     border-radius: 40px;
@@ -102,7 +110,17 @@ body {
     cursor: pointer;
   }
 
-  input{
+  #answer{
     width: 120px;
   }
 
+
+  #favcolor{
+    border-radius: 40px;
+    width: 80px;
+    height: 30px;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+
+  
