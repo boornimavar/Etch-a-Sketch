@@ -11,11 +11,11 @@
   </head>
   <body>
     <header>
-        <h1>COLORS</h1>
+        <h1>Color Craze</h1>
     </header>
     <div class="contents">
-        <div class="buttons">
-            <label for="choice" name="choice" value="choice">Enter your grid choice:</label>
+        <div class="buttons" id="button">
+            <label for="choice" name="choice" value="choice">Enter your grid choice(1-100):</label>
             <input id="answer" type="text" />
             <button id="ok">OK</button>
         </div>
@@ -31,8 +31,9 @@
         </div>
         <div class="buttons">
             <button id="reset">Reset</button>
+            <input id="favcolor" name="Color Picker" type="color"/>
             <button id="eraser">Eraser</button>
-        </div>
+        </div>    
     </div>
     <div id="holder">
         <img src="./extras/colors.gif">
